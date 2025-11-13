@@ -106,7 +106,7 @@ const ResourcesSuccessStories = () => {
         {/* CTA Button */}
         <div className="text-center">
           <Link
-            href="/success-stories"
+            href="https://blog.deffrilex-ls.com"
             className="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white rounded-[50px] bg-gradient-to-r from-[#1A73E8] to-[#0055D4] shadow-[0_4px_12px_rgba(26,115,232,0.25)] hover:shadow-[0_6px_20px_rgba(26,115,232,0.35)] hover:scale-[1.03] transition-all duration-300"
           >
             View All Stories

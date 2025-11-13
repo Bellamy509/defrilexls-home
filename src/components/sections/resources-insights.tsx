@@ -149,7 +149,7 @@ const ResourcesInsights = () => {
         {/* CTA Button */}
         <div className="mt-16 text-center">
           <Link
-            href="/insights"
+            href="https://blog.deffrilex-ls.com"
             className="inline-flex items-center justify-center px-8 py-4 text-[16px] font-bold text-white rounded-[50px] transition-all duration-300 hover:scale-105"
             style={{
               background: 'linear-gradient(90deg, #1A73E8 0%, #0055D4 100%)',

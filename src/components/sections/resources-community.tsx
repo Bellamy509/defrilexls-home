@@ -59,7 +59,7 @@ const ResourcesCommunity = () => {
         {/* CTA Button */}
         <div className="mt-16 text-center">
           <Link
-            href="/community"
+            href="https://community.defrilex-ls.com"
             className="inline-flex items-center justify-center px-12 py-4 bg-gradient-to-r from-[#1A73E8] to-[#0055D4] hover:from-[#0055D4] hover:to-[#003d99] text-white text-[16px] font-bold rounded-[50px] transition-all duration-300 shadow-[0_4px_14px_rgba(26,115,232,0.3)] hover:shadow-[0_6px_20px_rgba(26,115,232,0.4)] hover:scale-[1.03]"
           >
             Join the Community
