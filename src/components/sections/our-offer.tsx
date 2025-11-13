@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const OurOffer = () => {
   return (
@@ -24,12 +23,14 @@ const OurOffer = () => {
 
               {/* CTA Button */}
               <div className="mt-8">
-                <Link
-                  href="/enterprises"
+                <a
+                  href="https://defrilex-ls.com/find-talent"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block px-8 py-4 bg-[#1E40AF] text-white text-base font-semibold rounded-[4px] transition-all duration-200 hover:bg-[#2563EB] shadow-sm hover:shadow-md"
                 >
                   Learn More
-                </Link>
+                </a>
               </div>
             </div>
 

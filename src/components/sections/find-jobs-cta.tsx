@@ -30,12 +30,14 @@ const FindJobsCta = () => {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               {/* Primary Button */}
-              <Link
-                href="/auth/sign-up"
+              <a
+                href="https://app.defrilex-ls.com/freelancer/login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#0052CC] hover:bg-[#0045B8] text-white text-base font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               >
                 Join as an Interpreter
-              </Link>
+              </a>
 
               {/* Secondary Button */}
               <Link

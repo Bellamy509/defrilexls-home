@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 const InstantQuoteCta = () => {
   return (
     <section className="bg-secondary">
@@ -16,12 +14,14 @@ const InstantQuoteCta = () => {
             </p>
           </div>
           <div>
-            <Link
-              href="/quote"
+            <a
+              href="https://defrilex-ls.com/contact"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block rounded bg-primary px-8 py-4 text-base font-semibold text-primary-foreground transition-colors hover:bg-[#0065FF]"
             >
               Instant quote
-            </Link>
+            </a>
           </div>
         </div>
       </div>

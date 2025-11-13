@@ -93,7 +93,7 @@ export default function PrivacyPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Contact Us</h2>
             <p className="text-gray-700 leading-relaxed">
-              If you have any questions about this Privacy Policy, please contact us at privacy@interpretermarketplace.com
+              If you have any questions about this Privacy Policy, please contact us at privacy@defrilex.com
             </p>
           </section>
         </div>

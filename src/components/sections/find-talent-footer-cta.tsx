@@ -36,12 +36,14 @@ const FindTalentFooterCta = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button
-                onClick={handleHireTalent}
-                className="px-8 py-4 bg-primary text-white font-semibold rounded hover:bg-primary/90 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
+              <a
+                href="https://app.defrilex-ls.com/freelancer/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-primary text-white font-semibold rounded hover:bg-primary/90 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 inline-block text-center"
               >
                 Hire Talent
-              </button>
+              </a>
               
               <button
                 onClick={handleBookDemo}

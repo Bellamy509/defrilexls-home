@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 const KeyBenefits = () => {
   return (
     <section className="bg-white py-20 lg:py-28">
@@ -17,9 +15,6 @@ const KeyBenefits = () => {
                 <p className="text-base text-body-text leading-[1.6] mb-4">
                   Access 150,000+ pre-qualified interpreters across 300+ languages—the industry's most extensive talent pool. Trusted by Fortune 500 companies for mission-critical communications, our network delivers proven reliability at any scale, from single calls to enterprise-wide programs.
                 </p>
-                <Link href="/references" className="text-base font-normal text-primary-blue hover:underline">
-                  References
-                </Link>
               </div>
 
               <div>
@@ -27,9 +22,6 @@ const KeyBenefits = () => {
                 <p className="text-base text-body-text leading-[1.6] mb-4">
                   AI-powered matching connects you with the perfect interpreter in seconds, not days. No waiting, no recruiting—just 24/7 access to ready-now professionals. Deploy interpretation services immediately for urgent needs or scheduled events.
                 </p>
-                <Link href="#" className="text-base font-normal text-primary-blue hover:underline">
-                  Production process
-                </Link>
               </div>
 
               <div>
@@ -37,9 +29,6 @@ const KeyBenefits = () => {
                 <p className="text-base text-body-text leading-[1.6] mb-4">
                   Start for free with no upfront costs, subscriptions, or hidden fees—pay only when you hire. Built for regulated industries with intelligent compliance features ensuring HIPAA, GDPR, and data protection standards are automatically met on every engagement.
                 </p>
-                <Link href="#" className="text-base font-normal text-primary-blue hover:underline">
-                  Our services
-                </Link>
               </div>
             </div>
           </div>

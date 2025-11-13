@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
@@ -82,13 +81,15 @@ const Culture = () => {
             </p>
 
             {/* CTA Button */}
-            <Link 
-              href="/about-us" 
+            <a
+              href="https://defrilex.com/about.php"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-xl"
             >
               About Us
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

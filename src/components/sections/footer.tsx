@@ -63,13 +63,13 @@ const Footer = ({ variant = 'default' }: FooterProps) => {
         title: 'Get an instant quote',
         description: 'The fastest way to get documents translated with transparent pricing.',
         buttonLabel: 'Instant quote',
-        buttonHref: '#instant-quote',
+        buttonHref: 'https://defrilex-ls.com/contact',
       },
       {
         title: 'Talk to an expert',
         description: 'Book a 15-minute call with our team.',
         buttonLabel: 'Schedule a call',
-        buttonHref: '#schedule-call',
+        buttonHref: 'https://calendly.com/clientservices-defrilex-ls/30min',
       },
     ],
     'find-talent': [
@@ -101,13 +101,13 @@ const Footer = ({ variant = 'default' }: FooterProps) => {
         title: 'Get an instant quote',
         description: 'The fastest way to get documents translated with transparent pricing.',
         buttonLabel: 'Instant quote',
-        buttonHref: '#instant-quote',
+        buttonHref: 'https://defrilex-ls.com/contact',
       },
       {
         title: 'Talk to an expert',
         description: 'Book a 15-minute call with our team.',
         buttonLabel: 'Schedule a call',
-        buttonHref: '#schedule-call',
+        buttonHref: 'https://calendly.com/clientservices-defrilex-ls/30min',
       },
     ],
   };
@@ -116,8 +116,8 @@ const Footer = ({ variant = 'default' }: FooterProps) => {
   const currentSecondaryCTA = secondaryCTA[variant];
 
   const companyLinks = [
-    { name: 'About Us', href: '#' },
-    { name: 'Careers', href: '#' },
+    { name: 'About Us', href: 'https://defrilex.com/about.php' },
+    { name: 'Careers', href: 'https://defrilex.com/Jobs.php' },
     { name: 'News', href: '#' },
     { name: 'Privacy Policy', href: '/legal/privacy' },
     { name: 'Terms of Sale', href: '/legal/terms' },
@@ -192,7 +192,12 @@ const Footer = ({ variant = 'default' }: FooterProps) => {
                     {cta.description}
                   </p>
                   <Button asChild variant="outline" size="default">
-                    <a href={cta.buttonHref}>{cta.buttonLabel}</a>
+                    <a 
+                      href={cta.buttonHref}
+                      {...(cta.buttonHref.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    >
+                      {cta.buttonLabel}
+                    </a>
                   </Button>
                 </div>
               ))}
@@ -212,6 +217,7 @@ const Footer = ({ variant = 'default' }: FooterProps) => {
                 <li key={link.name}>
                   <a
                     href={link.href}
+                    {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     className="text-sm text-body-text hover:text-primary-blue hover:underline transition-colors"
                   >
                     {link.name}

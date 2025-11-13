@@ -83,14 +83,19 @@ const ClientTestimonial = () => {
 
               {/* CTA Button */}
               <div className="flex justify-center lg:justify-start">
-                <button className="bg-[#0052CC] text-white font-semibold text-lg px-10 py-4 rounded-md hover:bg-[#0065FF] transition-all duration-300 shadow-md">
+                <a
+                  href={selectedOption === 'provider' ? 'https://defrilex-ls.com/find-jobs' : 'https://defrilex-ls.com/find-talent'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#0052CC] text-white font-semibold text-lg px-10 py-4 rounded-md hover:bg-[#0065FF] transition-all duration-300 shadow-md inline-block text-center"
+                >
                   <span 
                     key={selectedOption}
                     className="inline-block animate-in fade-in slide-in-from-top-2 duration-300"
                   >
                     {selectedOption === 'provider' ? 'Find Jobs' : 'Find Talent'}
                   </span>
-                </button>
+                </a>
               </div>
             </div>
           </div>

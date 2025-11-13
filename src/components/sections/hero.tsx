@@ -54,13 +54,15 @@ const HeroSection = () => {
                 <span className="relative z-10">Find Talent</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
               </Link>
-              <Link
-                href="/find-jobs"
+              <a
+                href="https://app.defrilex-ls.com/freelancer/login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative inline-block w-full sm:w-auto text-center px-10 py-[16px] bg-transparent border-2 border-[#1E40AF] text-[#1E40AF] text-[16px] font-semibold rounded-[6px] transition-all duration-300 hover:bg-gradient-to-r hover:from-[#1E40AF]/8 hover:to-[#2563EB]/8 hover:border-[#2563EB] hover:text-[#2563EB] hover:shadow-[0_0_30px_rgba(37,99,235,0.25)] hover:scale-[1.02] overflow-hidden"
               >
                 <span className="relative z-10">Join as Interpreter</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#2563EB]/0 via-[#2563EB]/10 to-[#2563EB]/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-              </Link>
+              </a>
             </div>
           </div>
 
