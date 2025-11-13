@@ -65,8 +65,8 @@ const FindJobsHero = () => {
                 >
                   <div className="bg-white rounded-2xl overflow-hidden">
                     <Image
-                      src="/assets/interpreter-dashboard.webp"
-                      alt="Interpreter dashboard showing global jobs, certifications, and earnings"
+                      src="/assets/find-jobs-hero.jpg"
+                      alt="The Premier Platform for Professional Remote Interpretation Work - Defrilex Marketplace connects you with interpretation opportunities that match your expertise, language skills, and schedule"
                       width={560}
                       height={420}
                       className="w-full h-auto"

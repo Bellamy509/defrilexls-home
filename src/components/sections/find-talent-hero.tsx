@@ -75,8 +75,8 @@ const FindTalentHero = () => {
               >
                 <div className="bg-white rounded-2xl overflow-hidden">
                   <Image
-                    src="/assets/client-dashboard.webp"
-                    alt="Client dashboard for hiring and managing interpreters with live bookings and analytics"
+                    src="/assets/find-talent-hero.jpg"
+                    alt="Access Global Interpretation Talent - Your complete interpretation management platform. The Defrilex Marketplace connects businesses of all sizes with certified, professional interpreters around the world. Get on-demand language services with full visibility and control—available 24/7 in 300+ languages"
                     width={560}
                     height={420}
                     className="w-full h-auto"
