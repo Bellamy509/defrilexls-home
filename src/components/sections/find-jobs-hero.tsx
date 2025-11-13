@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 const FindJobsHero = () => {
@@ -35,13 +34,15 @@ const FindJobsHero = () => {
                 Defrilex Marketplace connects you with interpretation opportunities that match your expertise, language skills, and schedule.
               </p>
               <div className="mt-8">
-                <Link
-                  href="/signup/interpreter"
+                <a
+                  href="https://app.defrilex-ls.com/freelancer/register"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block px-8 py-4 bg-[#0B5FFF] hover:bg-[#0045C4] text-white text-base font-semibold rounded-[4px] transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
                   aria-label="Start finding interpretation jobs on Defrilex"
                 >
                   Start Finding Jobs
-                </Link>
+                </a>
               </div>
             </div>
 

@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, User } from "lucide-react";
-import SignInModal from '@/components/auth/sign-in-modal';
 
 const TranslatedLogo = ({ className }: { className?: string }) => (
   <svg
@@ -34,7 +33,6 @@ const TranslatedLogo = ({ className }: { className?: string }) => (
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isSignInModalOpen, setIsSignInModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,19 +69,23 @@ export default function Header() {
             <Link href="/resources" className="text-base font-normal text-foreground/90 hover:text-primary">
               Resources
             </Link>
-            <button
-              onClick={() => setIsSignInModalOpen(true)}
+            <a
+              href="https://app.defrilex-ls.com/freelancer/login"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center text-base font-normal text-foreground/90 hover:text-primary transition-colors"
             >
               <User className="mr-1 h-5 w-5" />
               Sign in
-            </button>
-            <Link
-              href="/auth/sign-up"
+            </a>
+            <a
+              href="https://app.defrilex-ls.com/freelancer/register"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center whitespace-nowrap rounded-[4px] text-base font-semibold h-10 px-6 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
             >
               Sign Up
-            </Link>
+            </a>
             <Link
               href="/contact"
               className="inline-flex items-center justify-center whitespace-nowrap rounded-[4px] text-base font-semibold h-10 px-6 border-2 border-primary text-primary bg-white hover:bg-accent transition-colors"
@@ -115,22 +117,24 @@ export default function Header() {
                 Resources
               </Link>
               <div className="border-t my-2"></div>
-              <button
-                onClick={() => {
-                  setIsSignInModalOpen(true);
-                  setIsMenuOpen(false);
-                }}
+              <a
+                href="https://app.defrilex-ls.com/freelancer/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
                 className="flex items-center rounded-md py-2 px-3 text-base font-medium text-foreground hover:bg-accent hover:text-primary w-full"
               >
                 <User className="mr-2 h-5 w-5" />
                 Sign in
-              </button>
-              <Link 
-                href="/auth/sign-up" 
+              </a>
+              <a 
+                href="https://app.defrilex-ls.com/freelancer/register" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-4 w-full inline-flex items-center justify-center whitespace-nowrap rounded-[4px] text-base font-semibold h-10 px-6 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
               >
                 Sign Up
-              </Link>
+              </a>
               <Link 
                 href="/contact" 
                 className="mt-2 w-full inline-flex items-center justify-center whitespace-nowrap rounded-[4px] text-base font-semibold h-10 px-6 border-2 border-primary text-primary bg-white hover:bg-accent transition-colors"
@@ -141,11 +145,6 @@ export default function Header() {
           </div>
         )}
       </header>
-
-      <SignInModal 
-        isOpen={isSignInModalOpen} 
-        onClose={() => setIsSignInModalOpen(false)} 
-      />
     </>
   );
 }

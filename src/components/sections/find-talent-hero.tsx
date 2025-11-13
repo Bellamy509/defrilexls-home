@@ -38,13 +38,15 @@ const FindTalentHero = () => {
               The Defrilex Marketplace connects businesses of all sizes with certified, professional interpreters around the world. Get on-demand language services with full visibility and control—available 24/7 in 300+ languages.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link
-                href="/signup/client"
+              <a
+                href="https://app.defrilex-ls.com/buyer/register"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block px-8 py-4 bg-[#0B5FFF] hover:bg-[#0045C4] text-white text-base font-semibold rounded-[4px] transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
                 aria-label="Start hiring interpreters on Defrilex"
               >
                 Start Hiring
-              </Link>
+              </a>
               <Link
                 href="/contact?sales=1"
                 className="inline-block px-8 py-4 bg-transparent hover:bg-muted text-[#0B5FFF] border-2 border-[#0B5FFF] text-base font-semibold rounded-[4px] transition-all duration-200"
