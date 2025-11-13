@@ -28,7 +28,7 @@ const ResourcesFooterCta = () => {
             <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 pt-4">
               <Button 
                 className="bg-[#0052CC] hover:bg-[#0065FF] text-white px-8 py-6 text-base font-semibold rounded transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
-                onClick={() => window.location.href = 'https://blog.deffrilex-ls.com'}
+                onClick={() => window.location.href = 'https://blog.defrilex-ls.com'}
               >
                 Explore Resources
               </Button>
