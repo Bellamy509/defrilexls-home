@@ -1,0 +1,294 @@
+/* Updated: 2025-11-12T18:53:57.851Z */
+/* Updated: 2025-11-12T16:22:03.482Z */
+/* Updated: 2025-11-12T16:03:51.068Z */
+/* Updated: 2025-11-12T09:59:00.082Z */
+/* Updated: 2025-11-12T09:56:58.540Z */
+/* Updated: 2025-11-12T08:57:27.038Z */
+/* Updated: 2025-11-11T19:16:59.522Z */
+/* Updated: 2025-11-11T01:50:54.079Z */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #1a1a1a;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #1a1a1a;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #1a1a1a;
+
+  --color-primary: #0052cc;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #f8f9fa;
+  --color-secondary-foreground: #0052cc;
+
+  --color-muted: #f8f9fa;
+  --color-muted-foreground: #768190;
+
+  --color-accent: #f8f9fa;
+  --color-accent-foreground: #1a1a1a;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #e5e7eb;
+  --color-input: #e5e7eb;
+  --color-ring: #0052cc;
+
+  --color-chart-1: #e67e22;
+  --color-chart-2: #2d8659;
+  --color-chart-3: #1e3a5f;
+  --color-chart-4: #f1c40f;
+  --color-chart-5: #e74c3c;
+
+  --color-sidebar: #f7f7f7;
+  --color-sidebar-foreground: #404040;
+  --color-sidebar-primary: #1a1a1a;
+  --color-sidebar-primary-foreground: #fafafa;
+  --color-sidebar-accent: #f0f0f0;
+  --color-sidebar-accent-foreground: #1a1a1a;
+  --color-sidebar-border: #d4d4d8;
+  --color-sidebar-ring: #3b82f6;
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  --color-primary-blue: #0052CC;
+  --color-secondary-blue: #0065FF;
+  --color-dark-text: #1A1A1A;
+  --color-body-text: #4A4A4A;
+  --color-light-gray-bg: #F8F9FA;
+  --color-white: #FFFFFF;
+  --color-border-gray: #E5E7EB;
+  --color-link-blue: #0052CC;
+
+  --font-primary: "Inter", sans-serif;
+}
+
+/*
+  The default border color has changed to currentColor in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-border);
+  }
+}
+
+@layer utilities {
+  body {
+    font-family: var(--font-primary);
+  }
+}
+
+@layer base {
+  :root {
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+    --card: var(--color-card);
+    --card-foreground: var(--color-card-foreground);
+    --popover: var(--color-popover);
+    --popover-foreground: var(--color-popover-foreground);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-primary-foreground);
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-secondary-foreground);
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted-foreground);
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-accent-foreground);
+    --destructive: var(--color-destructive);
+    --destructive-foreground: var(--color-destructive-foreground);
+    --border: var(--color-border);
+    --input: var(--color-input);
+    --ring: var(--color-ring);
+    --chart-1: var(--color-chart-1);
+    --chart-2: var(--color-chart-2);
+    --chart-3: var(--color-chart-3);
+    --chart-4: var(--color-chart-4);
+    --chart-5: var(--color-chart-5);
+    --radius: var(--radius-lg);
+    --sidebar-background: var(--color-sidebar);
+    --sidebar-foreground: var(--color-sidebar-foreground);
+    --sidebar-primary: var(--color-sidebar-primary);
+    --sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+    --sidebar-accent: var(--color-sidebar-accent);
+    --sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+    --sidebar-border: var(--color-sidebar-border);
+    --sidebar-ring: var(--color-sidebar-ring);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-body-text);
+    background-color: var(--color-background);
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--color-dark-text);
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.25px;
+    color: var(--color-dark-text);
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--color-dark-text);
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-body-text);
+  }
+
+  a {
+    color: var(--color-link-blue);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .text-body-large {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
+
+  .text-body-regular {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
+
+  .text-body-small {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+  .text-button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.25px;
+  }
+
+  .text-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 56px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
