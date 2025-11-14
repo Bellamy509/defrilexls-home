@@ -78,7 +78,7 @@ const HeroSection = () => {
               
               <div className="relative overflow-hidden rounded-2xl shadow-[0_8px_40px_rgba(30,64,175,0.12)] group-hover:shadow-[0_12px_60px_rgba(30,64,175,0.2)] transition-all duration-500 bg-gradient-to-br from-white via-[#FAFBFC] to-[#F0F4FF]">
                 <Image
-                  src="/gemini-2_5-flash-image-preview (4).png"
+                  src="/Untitled design.png"
                   alt="Professional global network with holographic interfaces connecting interpreters across the world"
                   width={1200}
                   height={675}
