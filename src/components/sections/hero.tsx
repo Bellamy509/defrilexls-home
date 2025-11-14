@@ -12,25 +12,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
-      {/* Abstract decorative patterns */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
-        <div className="absolute top-20 left-10 w-[400px] h-[400px] bg-[#1E40AF] rounded-full blur-[120px]" />
-        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#2563EB] rounded-full blur-[150px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#FF9D66] rounded-full blur-[180px]" />
-      </div>
-
-      {/* Circular digital pattern overlay */}
-      <div className="absolute inset-0 opacity-[0.015] pointer-events-none">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <circle cx="20" cy="20" r="1" fill="#1E40AF" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-        </svg>
-      </div>
+    <section className="relative bg-[#FFFFFF] py-24 lg:py-32 overflow-hidden">
       
       <div className="max-w-[1200px] mx-auto px-6 xl:px-0 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-y-16 lg:gap-x-20">
@@ -72,21 +54,16 @@ const HeroSection = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            <div className="relative w-full max-w-[720px] mx-auto group">
-              {/* Glow effect behind image */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB]/20 via-[#1E40AF]/10 to-[#FF9D66]/15 rounded-3xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10 scale-95" />
-              
-              <div className="relative overflow-hidden rounded-2xl shadow-[0_8px_40px_rgba(30,64,175,0.12)] group-hover:shadow-[0_12px_60px_rgba(30,64,175,0.2)] transition-all duration-500 bg-white">
+            <div className="relative w-full max-w-[720px] mx-auto">
+              <div className="relative overflow-hidden bg-[#FFFFFF]">
                 <Image
                   src="/Untitled design.png"
                   alt="Professional global network with holographic interfaces connecting interpreters across the world"
                   width={1200}
                   height={675}
-                  className="w-full h-auto transform group-hover:scale-105 transition-transform duration-[3000ms] ease-out"
+                  className="w-full h-auto"
                   priority
                 />
-                {/* Subtle overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#1E40AF]/5 via-transparent to-[#2563EB]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               </div>
             </div>
           </div>
