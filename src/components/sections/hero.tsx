@@ -76,7 +76,7 @@ const HeroSection = () => {
               {/* Glow effect behind image */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB]/20 via-[#1E40AF]/10 to-[#FF9D66]/15 rounded-3xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10 scale-95" />
               
-              <div className="relative overflow-hidden rounded-2xl shadow-[0_8px_40px_rgba(30,64,175,0.12)] group-hover:shadow-[0_12px_60px_rgba(30,64,175,0.2)] transition-all duration-500">
+              <div className="relative overflow-hidden rounded-2xl shadow-[0_8px_40px_rgba(30,64,175,0.12)] group-hover:shadow-[0_12px_60px_rgba(30,64,175,0.2)] transition-all duration-500 bg-gradient-to-br from-white via-[#FAFBFC] to-[#F0F4FF]">
                 <Image
                   src="/gemini-2_5-flash-image-preview (4).png"
                   alt="Professional global network with holographic interfaces connecting interpreters across the world"
